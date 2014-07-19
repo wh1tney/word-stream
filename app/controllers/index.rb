@@ -11,8 +11,11 @@ get "/stories/new" do
   erb :new
 end
 
-put "/stories/update" do
-  # update story
+put "/stories/:id" do
+  story=Story.find(params[:id])
+  story.update(title: params[:title], story: params[:story])
+  story.save
+  redirect "/stories/#{story.id}"
 end
 
 get "/stories/:id" do
@@ -27,7 +30,8 @@ post "/stories" do
 end
 
 get "/stories/:id/edit" do
-  # form for editing story
+  @story=Story.find(params[:id])
+  erb :edit
 end
 
 delete "/stories/:id" do
