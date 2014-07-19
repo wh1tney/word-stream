@@ -1,0 +1,7 @@
+<form action="/stories/<%= @story.id %>" method="post" id="editstory">
+  <input name="_method" type="hidden" value="put"/>
+  <label>Title</label><input type="text" value="<%= @story.title %>" name="title"> </input>
+
+  <label>Story</label><textarea name="story" form="editstory"><%= @story.story %></textarea>
+  <input type="submit">
+</form>
