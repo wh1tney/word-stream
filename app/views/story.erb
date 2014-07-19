@@ -1,0 +1,10 @@
+<h3><%= @story.title %></h3>
+<div id="story_container">
+  <%= @story.story %>
+</div>
+<button id="startBtn">Start Reading!</button>
+<form action="/stories/<%= @story.id %>" method="post" id="deletestory">
+  <input name="_method" type="hidden" value="delete"/>
+  <input type="submit" value="delete">
+</form>
+
