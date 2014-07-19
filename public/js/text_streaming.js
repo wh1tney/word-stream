@@ -9,19 +9,39 @@
 // Step 3: Store step 2 as a variable and add to the DOM (html page)
 // Step 4: Actually create a function that colors in each letter or word
 
-function formating_story(story){
+$(document).ready(function(){
+  formatting_story("This is!# the story, of a unIcorn");
+  turn_it_red();
+});
+
+function formatting_story(story){
   var text = "";
   // splits into an array of letters such as ["a", "b", "c"]
-  var array_of_letters = text.split("") ;
-  $.each(array_of_letters, function(a, b) {
-    // a is the index, b is the element
-    text += "<span id='p" + a + " style='color:#C0C0C0'>" + b[0] + "</span>";
-  })
+  var array_of_letters = story.split("") ;
+
+  for (var i = 0; i < array_of_letters.length; i++) {
+    text += "<span id='p" + i + "' style='color:#C0C0C0'>" + array_of_letters[i] + "</span>";
+  }
+  // array_of_letters.each(function(a, b) {
+  //   // a is the index, b is the element
+  //   text += "<span id='p" + a + "' style='color:#C0C0C0'>" + b[0] + "</span>";
+  // })
+  // assuming that our container id is #story_container append text into the container
+  $('#story_container').html(text);
 };
 
- $(document).ready(function(){
-
-  $('#startBtn').on('click',function(){
-
+function turn_it_red(){
+  // assuming that there is a button with an id "startBtn"...
+  $('#startBtn').on('click',function(event){
+    event.preventDefault();
+    var letterSize = $("#story_container span").length ;
+    for(var i = 0; i < letterSize; i++){
+      setTimeout(function(){
+        $($("#story_container span")[i]).css('color','red');
+      },1000);
+    }
   });
-});
+}
+
+
+
