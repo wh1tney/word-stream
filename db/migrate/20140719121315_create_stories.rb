@@ -1,8 +1,9 @@
 class CreateStories < ActiveRecord::Migration
   def change
-    create_table do |t|
+    create_table :stories do |t|
       t.string :title
-      t.string :story
+      t.text :story
+      t.timestamps
     end
   end
 end
