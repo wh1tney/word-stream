@@ -36,7 +36,7 @@ function waitAndTurnTheNextOneRed (i, $characters) {
     return;
   };
   $characters.eq(i).animate({color: 'red'}, 1000);
-  setTimeout(function() {waitAndTurnTheNextOneRed(i+1, $characters)}, 3000);
+  setTimeout(function() {waitAndTurnTheNextOneRed(i+1, $characters)}, 800);
 }
 
 var justClicked
