@@ -9,11 +9,11 @@ body {
   background-color:#f0f2f3;
   color:darkslategrey;
   height:100%;
+  text-align:center;
 }
 
 header {
   padding:20px;
-  text-align: center;
 }
 
 header h1 {
@@ -28,11 +28,12 @@ header h2 {
 
 a {
   text-decoration: none;
-  color:#7f6148;
+  /*color:#7f6148;*/
+  color:darkslategray;
 }
 
 a:visited {
-  color:#7f6148;
+  color:darkslategray;
 }
 
 nav button {
@@ -52,14 +53,11 @@ button a:link {
   color:#7f6148;
 }
 
-p {
-  text-align: center;
-}
-
 /* IDs */
 
 #container {
   padding:0 25%;
+  text-align:left;
 }
 
 /* End styling for stories.erb */
@@ -150,6 +148,15 @@ form {
 /* Styling for stories.erb */
 #stories {
   margin-top:20px;
+}
+
+#stories p {
+  font-size:1.3em;
+  font-family:"Open Sans", sans-serif;
+  font-weight:300;
+  text-align:center;
+  text-transform:uppercase;
+  margin:15px 0;
 }
 
 /* End styling for stories.erb */
