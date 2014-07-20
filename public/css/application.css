@@ -37,6 +37,7 @@ a {
 }
 
 a:visited {
+  /*color:#7f6148;*/
   color:darkslategray;
 }
 
@@ -67,11 +68,27 @@ button a:link {
 /* Styling for home.erb */
 
 #container img {
-  width:80%;
-  margin: 20px auto;
-  padding:2% 10%;
-  height:20em;
+  width:60%;
+  margin: 10px auto;
+  padding:2% 20%;
 }
+
+/* End styling for home.erb */
+
+/* Styling for stories.erb */
+
+#stories a, a:visited  {
+  text-decoration: none;
+  color:rgb(124, 124, 124);
+  /*color:darkslategray;*/
+}
+
+#stores a, a:visited h1 {
+  color:darkslategray;
+}
+
+/* End styling for stories.erb */
+
 /* Styling for new.erb */
 
 label {
