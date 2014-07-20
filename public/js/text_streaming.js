@@ -22,11 +22,6 @@ function formatting_story(story){
   for (var i = 0; i < array_of_letters.length; i++) {
     text += "<span id='p" + i + "' style='color:#C0C0C0'>" + array_of_letters[i] + "</span>";
   }
-  // array_of_letters.each(function(a, b) {
-  //   // a is the index, b is the element
-  //   text += "<span id='p" + a + "' style='color:#C0C0C0'>" + b[0] + "</span>";
-  // })
-  // assuming that our container id is #story_container append text into the container
   $('#story_container').html(text);
 };
 
@@ -42,7 +37,6 @@ function waitAndTurnTheNextOneRed (i, $characters) {
 var justClicked
 
 function turn_it_red(){
-  // assuming that there is a button with an id "startBtn"...
   $('#startBtn').on('click',function(){
     if (justClicked) return;
     justClicked = true;
@@ -50,24 +44,4 @@ function turn_it_red(){
     waitAndTurnTheNextOneRed(0, $characters);
   });
 }
-
-// function turn_it_red(){
-//   // assuming that there is a button with an id "startBtn"...
-//   $('#startBtn').on('click',function(event){
-//     event.preventDefault();
-//     var letterSize = $("#story_container span").length ;
-//     var i = 0;
-//     (function turn_it_red() {
-//       // setTimeout(function(){
-//       setTimeout(function () {
-//         if (i++ < letterSize) {
-//         $($("#story_container span")[i]).css('color','red');
-//         turn_it_red();
-//         }
-//       }, 1000);
-//       // $($("#story_container span")[i]).css('color','red');
-//     })();
-//   });
-// }
-
 
