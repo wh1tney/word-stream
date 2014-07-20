@@ -18,12 +18,12 @@ header {
 
 header h1 {
   font-size:3em;
-  margin-bottom:0;
+  margin:10px 0 0;
 }
 
 header h2 {
   -webkit-animation-delay: .5s;
-  margin-bottom:30px;
+  margin:11px 0 20px;
 }
 
 img {
@@ -122,6 +122,7 @@ input[type="submit"] {
   border: none;
   box-shadow:0 4px 1px rgba(0,0,0,0.08);
   height:40px;
+  outline:none;
 }
 
 #container input[type="text"] {
