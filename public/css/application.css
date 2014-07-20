@@ -139,3 +139,10 @@ form {
   outline: none;
 }
 /* End styling for story.erb */
+
+/* Styling for stories.erb */
+#stories {
+  margin-top:20px;
+}
+
+/* End styling for stories.erb */
