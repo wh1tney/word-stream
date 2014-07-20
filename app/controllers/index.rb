@@ -1,5 +1,6 @@
 get "/" do
-  redirect "/stories"
+  erb :home
+  # redirect "/stories"
 end
 
 get "/stories" do
