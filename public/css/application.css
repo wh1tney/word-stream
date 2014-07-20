@@ -1,0 +1,80 @@
+/* Styling for stories.erb */
+
+html {
+  height:100%;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  height:100%;
+}
+
+header {
+  padding:20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size:3em;
+}
+
+a {
+  text-decoration: none;
+  color:#7f6148;
+}
+
+a:visited {
+  color:#7f6148;
+}
+
+button {
+  background-color: #fff0b7;
+  border:none;
+  width:125px;
+  margin: 0 20px;
+  padding:10px;
+  border-radius: 5px;
+}
+
+button a:link {
+  color:#7f6148;
+}
+
+ul {
+  list-style:none;
+}
+
+/* IDs */
+
+#container {
+  padding:0 25%;
+}
+
+/* End styling for stories.erb */
+
+
+/* Styling for new.erb */
+
+label {
+  display:block;
+}
+
+textarea, input {
+  display:block;
+  width:80%;
+  margin:2% auto;
+}
+
+textarea {
+  height:20em;
+}
+
+input[type="submit"] {
+  margin-top:5%;
+  border:none;
+}
+
+/* End styling for new.erb */
+
+
+
