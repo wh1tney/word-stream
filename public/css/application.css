@@ -37,6 +37,7 @@ nav button {
   border-radius: 5px;
   box-shadow:-1px 1px 5px rgb(202, 188, 170);
   text-transform:uppercase;
+  outline: none;
 }
 
 button a:link {
@@ -101,7 +102,7 @@ input[type="submit"] {
 }
 
 #story h3 {
-  margin:0 0 15px;
+  margin:0 0 20px;
 }
 
 #story_container {
@@ -129,6 +130,6 @@ form {
   width: 30%;
   margin: 0 auto 25px;
   border-radius: 5px;
-
+  outline: none;
 }
 /* End styling for story.erb */
