@@ -24,7 +24,7 @@ function waitAndTurnTheNextOneRed (i, $characters) {
     return;
   };
   $characters.eq(i).animate({color: 'black'}, 800);
-  $characters.eq(i).animate({color: 'lightgray'}, 1000);
+  $characters.eq(i).animate({color: 'lightgray'}, 700);
 
   setTimeout(function() {waitAndTurnTheNextOneRed(i+1, $characters)}, 150);
 }
