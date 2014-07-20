@@ -1,4 +1,4 @@
-/* Styling for stories.erb */
+/* Styling for layout.erb */
 
 html {
   height:100%;
@@ -24,6 +24,10 @@ header h1 {
 header h2 {
   -webkit-animation-delay: .5s;
   margin-bottom:30px;
+}
+
+img {
+  margin: 20px 0;
 }
 
 a {
@@ -53,16 +57,21 @@ button a:link {
   color:#7f6148;
 }
 
-/* IDs */
-
 #container {
   padding:0 25%;
   text-align:left;
 }
 
-/* End styling for stories.erb */
+/* End styling for layout.erb */
 
+/* Styling for home.erb */
 
+#container img {
+  width:80%;
+  margin: 20px auto;
+  padding:2% 10%;
+  height:20em;
+}
 /* Styling for new.erb */
 
 label {
