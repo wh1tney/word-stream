@@ -29,15 +29,16 @@ a:visited {
 }
 
 nav button {
-  background-color: #fff0b7;
+  background-color: #6FCBBB;
   border:none;
   width:125px;
   margin: 0 10px;
   padding:10px;
   border-radius: 5px;
-  box-shadow:-1px 1px 5px rgb(202, 188, 170);
+  box-shadow:0px 4px 0px #43b29d;
   text-transform:uppercase;
   outline: none;
+  color:white;
 }
 
 button a:link {
@@ -84,7 +85,8 @@ input[type="submit"] {
 /* End styling for new.erb */
 
 /* Styling for story.erb */
-#container input[type="submit"], #container button{
+
+#container input[type="submit"], button{
   background-color:#f0f2f3;
   border: none;
   box-shadow:-1px 1px 5px rgb(202, 188, 170);
