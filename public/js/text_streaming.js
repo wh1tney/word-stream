@@ -23,8 +23,8 @@ function waitAndTurnTheNextOneRed (i, $characters) {
     justClicked = false;
     return;
   };
-  $characters.eq(i).animate({color: 'red', fontSize: '2.2em'}, 1000);
-  $characters.eq(i).animate({color: 'red', fontSize: '1.0em'}, 3000);
+  $characters.eq(i).animate({color: 'black'}, 800);
+  $characters.eq(i).animate({color: 'lightgray'}, 1000);
 
   setTimeout(function() {waitAndTurnTheNextOneRed(i+1, $characters)}, 150);
 }
@@ -39,4 +39,3 @@ function turn_it_red(){
     waitAndTurnTheNextOneRed(0, $characters);
   });
 }
-
