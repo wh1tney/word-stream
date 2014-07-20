@@ -30,18 +30,44 @@ function formatting_story(story){
   $('#story_container').html(text);
 };
 
+function waitAndTurnTheNextOneRed (i, $characters) {
+  if (i >= $characters.length) {
+    justClicked = false;
+    return;
+  };
+  $characters.eq(i).animate({color: 'red'}, 1000);
+  setTimeout(function() {waitAndTurnTheNextOneRed(i+1, $characters)}, 3000);
+}
+
+var justClicked
+
 function turn_it_red(){
   // assuming that there is a button with an id "startBtn"...
-  $('#startBtn').on('click',function(event){
-    event.preventDefault();
-    var letterSize = $("#story_container span").length ;
-    for(var i = 0; i < letterSize; i++){
-      setTimeout(function(){
-        $($("#story_container span")[i]).css('color','red');
-      },1000);
-    }
+  $('#startBtn').on('click',function(){
+    if (justClicked) return;
+    justClicked = true;
+    var $characters = $("#story_container span");
+    waitAndTurnTheNextOneRed(0, $characters);
   });
 }
 
+// function turn_it_red(){
+//   // assuming that there is a button with an id "startBtn"...
+//   $('#startBtn').on('click',function(event){
+//     event.preventDefault();
+//     var letterSize = $("#story_container span").length ;
+//     var i = 0;
+//     (function turn_it_red() {
+//       // setTimeout(function(){
+//       setTimeout(function () {
+//         if (i++ < letterSize) {
+//         $($("#story_container span")[i]).css('color','red');
+//         turn_it_red();
+//         }
+//       }, 1000);
+//       // $($("#story_container span")[i]).css('color','red');
+//     })();
+//   });
+// }
 
 
