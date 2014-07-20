@@ -20,6 +20,7 @@ end
 
 get "/stories/:id" do
   @story = Story.find(params[:id])
+  @story_js = @story.story
   erb :story
 end
 
