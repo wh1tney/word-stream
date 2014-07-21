@@ -41,7 +41,7 @@ a:visited {
   color:darkslategray;
 }
 
-nav button {
+button {
   background-color: #6FCBBB;
   border:none;
   width:125px;
@@ -54,8 +54,10 @@ nav button {
   color:white;
 }
 
-button a:link {
-  color:#7f6148;
+.cta {
+  width:150px;
+  margin: 20px auto;
+  display:block;
 }
 
 #container {
@@ -107,23 +109,23 @@ textarea {
   height:20em;
 }
 
-input[type="submit"] {
+/*input[type="submit"] {
   margin-top:5%;
   border:none;
   border-radius: 5px;
-}
+} */
 
 /* End styling for new.erb */
 
 /* Styling for story.erb */
 
-#container input[type="submit"], button{
+/*#container input[type="submit"] {
   background-color:#f0f2f3;
   border: none;
   box-shadow:0 4px 1px rgba(0,0,0,0.08);
   height:40px;
   outline:none;
-}
+}*/
 
 #container input[type="text"] {
   padding-left:3px;
@@ -159,17 +161,24 @@ form {
   width: 49%;
 }
 
-#startBtn {
-  display: block;
-  width: 30%;
-  margin: 7% auto 0;
-  border-radius: 5px;
-}
 .centerbutton {
   width: 30%;
   margin: 0 auto 25px;
   border-radius: 5px;
   outline: none;
+}
+
+.mod-links {
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.mod-links input[type="submit"]{
+  border:none;
+  background:none;
+  width:80px;
+  display:inline;
+  margin-bottom:20px;
 }
 /* End styling for story.erb */
 

@@ -4,11 +4,7 @@
     <%= @story.story %>
   </div>
 </div>
-<button id="startBtn">Begin Reading</button>
-<div class="centerbutton">
-  <form action="/stories/<%= @story.id %>" method="post" id="deletestory">
-    <input name="_method" type="hidden" value="delete"/>
-    <input type="submit" class="indv_story" value="Delete">
-  </form>
-  <a href="/stories/<%= @story.id %>/edit"><button class="indv_story">Edit</button></a>
+<button class="cta">Begin Reading</button>
+<div class="mod-links">
+    <a href="/stories/<%= @story.id %>/edit">Edit</a>
 </div>

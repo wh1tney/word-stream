@@ -3,5 +3,12 @@
   <label>Title</label><input type="text" value="<%= @story.title %>" name="title"> </input>
 
   <label>Story</label><textarea name="story" form="editstory"><%= @story.story %></textarea>
-  <input type="submit">
+
+  <div class="mod-links">
+    <form action="/stories/<%= @story.id %>" method="post" id="deletestory">
+      <input name="_method" type="hidden" value="delete"/>
+      <input type="submit" value="Delete">
+      <input type="submit">
+    </form>
+  </div>
 </form>
