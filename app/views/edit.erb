@@ -5,10 +5,10 @@
   <label>Story</label><textarea name="story" form="editstory"><%= @story.story %></textarea>
 
   <div class="mod-links">
-    <form action="/stories/<%= @story.id %>" method="post" id="deletestory">
+    <input type="submit" value="Submit">
+<!--    <form action="/stories/<%= @story.id %>" method="post" id="deletestory">
       <input name="_method" type="hidden" value="delete"/>
       <input type="submit" value="Delete">
-      <input type="submit">
-    </form>
+    </form> -->
   </div>
 </form>
